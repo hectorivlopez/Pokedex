@@ -1,0 +1,9 @@
+<div *ngIf="loaded" class="pokedex-container">
+  <app-search [allPokemons]="allPokemons"></app-search>
+
+  <div class="regions-grid">
+    <app-pokemon-region *ngFor="let region of regions" [pokemons]="selectedPokemons[region]" [regionName]="region"
+      [ngStyle]="{ 'background-color': getBackgroundColor(region) }">
+    </app-pokemon-region>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.pokedex-container {
+  margin: 20px;
+}
+
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .regions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+app-pokemon-region {
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .regions-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,4 @@
+<div *ngIf="details" (click)="goToDetails()" class="pokemon-card">
+  <img [src]="details.sprites?.front_default" alt="{{ pokemon }}" />
+  <h3>{{ pokemon.toUpperCase() }}</h3>
+</div>

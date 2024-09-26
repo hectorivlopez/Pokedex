@@ -1,0 +1,39 @@
+<div *ngIf="pokemonDetails" class="pokemon-details-container">
+  <h1>{{ pokemonDetails.name.toUpperCase() }}</h1>
+
+  <div class="main-info">
+    <div class="pokemon-image">
+      <img [src]="pokemonDetails.sprites.front_default" alt="{{ pokemonDetails.name }}" />
+    </div>
+    <div class="pokemon-stats">
+      <div *ngFor="let stat of pokemonDetails.stats" class="stats-item">
+        <p class="stats-text"><span>{{ stat.stat.name.toUpperCase() }}: </span> {{ stat.base_stat }}</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="pokemon-info">
+    <div class="pokemon-stats-category pokemon-types">
+      <h3>Tipos:</h3>
+      <p *ngFor="let type of pokemonDetails.types" class="stat-card">
+        {{ type.type.name }}
+      </p>
+    </div>
+
+    <div class="pokemon-stats-category pokemon-abilities">
+      <h3>Habilidades:</h3>
+      <p *ngFor="let ability of pokemonDetails.abilities" class="stat-card">
+        {{ ability.ability.name }}
+      </p>
+    </div>
+
+    <div class="pokemon-stats-category pokemon-moves">
+      <h3>Movimientos Principales:</h3>
+      <p *ngFor="let move of pokemonDetails.moves.slice(0, 5)" class="stat-card">
+        {{ move.move.name }}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Pokemon Hollow';
+  font-size: 50px;
+}
+
+.pokemon-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.main-info {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pokemon-image {
+  max-width: 400px;
+  width: 90%;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+
+
+.stats-text {
+  font-size: 20px;
+}
+
+.stats-text span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pokemon-stats-category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+
+  .main-info,
+  .pokemon-stats-category {
+    flex-direction: column;
+  }
+}
+
+.stat-card {
+  padding: 7px 10px;
+  border-radius: 10px;
+  align-items: center;
+  width: fit-content;
+}
+
+.pokemon-types .stat-card {
+  background-color: rgba(21, 181, 255, 0.3);
+}
+
+.pokemon-moves .stat-card {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.pokemon-abilities .stat-card {
+  background-color: rgba(0, 255, 0, 0.1);
+}

@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>{{ regionName.toUpperCase() }}</h2>
+
+  <div class="pokemon-grid">
+    <div *ngFor="let pokemon of pokemons" class="pokemon-cell">
+      <app-pokemon [pokemon]="pokemon"></app-pokemon>
+    </div>
+  </div>
+</div>
