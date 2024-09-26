@@ -2,7 +2,7 @@
 
 ## Instrucciones para comenzar
 1. Una vez clonado el repositorio el primer paso es instalar las dependencias necesarias para el proyecto usando el comando `npm install`
-2. Ya instaladas las dependencias, el proycto puede correr de forma local con el comando `ng serve` o `npm run start`
+2. Ya instaladas las dependencias, el proyecto puede correr de forma local con el comando `ng serve` o `npm run start`
 
 ## Descripción del proyecto e instrucciones de uso
 - La Pokedex muestra pokemones ordenados por región habiendo 10 en cada una
